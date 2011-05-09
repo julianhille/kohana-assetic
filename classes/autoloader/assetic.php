@@ -29,7 +29,7 @@ Class AutoLoader_Assetic {
 			return;
 		}
 		
-		if($file = Kohana::find_file('vendor/Assetic/src/Assetic', str_replace('\\', '/', $class))) {
+		if($file = Kohana::find_file('vendor/Assetic/src', str_replace('\\', '/', $class))) {
 			include $file;
 			return;
 		}
