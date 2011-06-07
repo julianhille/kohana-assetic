@@ -159,7 +159,7 @@ class AssetFactory
         }
 
         // output --> target url
-        $asset->setTargetUrl(str_replace('*', $options['name'], $options['output']));
+        $asset->setTargetPath(str_replace('*', $options['name'], $options['output']));
 
         foreach ($this->workers as $worker) {
             $worker->process($asset);
